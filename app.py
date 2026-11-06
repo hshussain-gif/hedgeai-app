@@ -31,7 +31,6 @@ Install: python -m pip install streamlit yfinance vaderSentiment pandas
 No API keys, paid services, or sentiment-model downloads are required.
 Run:     python -m streamlit run app.py
 """
-from __future__ import annotations
 
 import html
 import math
