@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import streamlit as st
 
 # Initialize session state to track if they closed the popup
