@@ -1,3 +1,28 @@
+import streamlit as st
+
+# Initialize session state to track if they closed the popup
+if "disclaimer_accepted" not in st.session_state:
+    st.session_state.disclaimer_accepted = False
+
+# Define the pop-up content
+@st.dialog("⚠️ Academic Disclaimer & Notice")
+def show_disclaimer():
+    st.write("""
+    This application is built strictly as an academic portfolio project by a Master of Finance student at UMass. 
+    All output, including the automated 'LONG', 'SHORT', or 'HOLD' directives and text sentiment scoring, 
+    is generated via an open-source data pipeline for educational and demonstration purposes only. 
+
+    This tool does not provide licensed investment, financial, tax, or legal advice. Do not use this 
+    application to make real-world trading or investment decisions.
+    """)
+    if st.button("I Understand and Accept", type="primary"):
+        st.session_state.disclaimer_accepted = True
+        st.rerun()
+
+# Force the pop-up to show immediately if they haven't accepted it yet
+if not st.session_state.disclaimer_accepted:
+    show_disclaimer()
+
 """HedgeAI — standalone Streamlit application. Requires Python 3.10+.
 
 Install: python -m pip install streamlit yfinance vaderSentiment pandas
