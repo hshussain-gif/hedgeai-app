@@ -383,6 +383,8 @@ def main():
                  "not a finance-specific model, and can misread financial wording or sarcasm.")
     st.caption("The title retains the 2-year dashboard context. Headline sentiment is not a "
                "24-month forecast or a complete valuation; the LONG/SHORT/HOLD signal is an unvalidated heuristic.")
+    st.caption("⚠️ **Disclaimer:** This application is built strictly as an academic portfolio project by a Master of Finance student at UMass. All output, including the automated 'LONG', 'SHORT', or 'HOLD' directives and text sentiment scoring, is generated via an open-source data pipeline for educational and demonstration purposes only. This tool does not provide licensed investment, financial, tax, or legal advice. Do not use this application to make real-world trading or investment decisions.")
+
 
 
 if __name__ == "__main__":
