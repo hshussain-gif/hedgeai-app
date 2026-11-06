@@ -296,6 +296,15 @@ def metric_rows(data):
 def main():
     st.set_page_config(page_title="HedgeAI — Free Sentiment", page_icon="📊", layout="wide")
     st.title("HedgeAI: 2-Year Long/Short Analysis Dashboard")
+    st.warning("""
+⚠️ **Academic Disclaimer & Notice**  
+This application is built strictly as an academic portfolio project by a Master of Finance student at UMass. 
+All output, including the automated 'LONG', 'SHORT', or 'HOLD' directives and text sentiment scoring, 
+is generated via an open-source data pipeline for educational and demonstration purposes only. 
+
+This tool does not provide licensed investment, financial, tax, or legal advice. Do not use this 
+application to make real-world trading or investment decisions.
+""")
     st.caption("Free local VADER sentiment • Yahoo Finance data • No API key required")
     with st.sidebar:
         st.header("Research controls")
