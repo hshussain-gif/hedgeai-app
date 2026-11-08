@@ -25,13 +25,6 @@ def show_disclaimer():
 if not st.session_state.disclaimer_accepted:
     show_disclaimer()
 
-"""HedgeAI — standalone Streamlit application. Requires Python 3.10+.
-
-Install: python -m pip install streamlit yfinance vaderSentiment pandas
-No API keys, paid services, or sentiment-model downloads are required.
-Run:     python -m streamlit run app.py
-"""
-
 import html
 import math
 import re
