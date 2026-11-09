@@ -313,7 +313,7 @@ def metric_rows(data):
 
 
 def main():
-    st.set_page_config(page_title="HedgeAI — Free Sentiment", page_icon="📊", layout="wide")
+    st.set_page_config(page_title="MarketLens — Stock Fundamentals & News Sentiment", page_icon="📊", layout="wide")
     st.title("MarketLens: Stock Fundamentals & News Sentiment Dashboard")
     st.warning("""
 ⚠️ **Academic Disclaimer & Notice**  
