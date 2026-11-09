@@ -314,7 +314,7 @@ def metric_rows(data):
 
 def main():
     st.set_page_config(page_title="HedgeAI — Free Sentiment", page_icon="📊", layout="wide")
-    st.title("HedgeAI: 2-Year Long/Short Analysis Dashboard")
+    st.title("HedgeAI: Stock Fundamentals & News Sentiment Dashboard")
     st.warning("""
 ⚠️ **Academic Disclaimer & Notice**  
 This application is built strictly as an academic portfolio project by a Master of Finance student at UMass. 
